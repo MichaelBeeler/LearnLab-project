@@ -5,11 +5,11 @@ class ConjugationFunctions:
 
 
     @staticmethod
-    def SumSkill(skill_list):
+    def ConjuctiveSkill(skill_list):
         return np.mean(skill_list)
 
     @staticmethod
-    def OrSkill(skill_list):
+    def DisjunctiveSkill(skill_list):
         return np.max(skill_list)
 
     @staticmethod
@@ -20,7 +20,12 @@ class ConjugationFunctions:
         return x
 
     @staticmethod
-    def NoneSkill(skill):
-        return skill
+    def NoneSkill(skill_list):
+        return np.average(skill_list)
+
+    @staticmethod
+    def SquareSkill(skill):
+        return skill * skill
+
 
 
